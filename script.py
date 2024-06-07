@@ -6,7 +6,15 @@ import sys
 import os
 from colorama import Fore, Style
 
-os.system("clear")
+operacional_sys =  os.name
+if operacional_sys =="posix":
+    os.system("clear")
+elif operacional_sys =="nt":
+    os.system("cls")
+    print(Fore.RED+"WARNING: This tool may not work correctly on operating systems such as Windows."+Fore.RESET)
+else:
+    print(Fore.RED+"Operating System not supported."+Fore.RESET)
+
 print(Style.BRIGHT+Fore.YELLOW+"""
                      __  _   ___ _____ 
   ____ __  ___  ___ / _|/_\ | _ \_   _|
@@ -15,8 +23,8 @@ print(Style.BRIGHT+Fore.YELLOW+"""
     |_|                                
 -----------------------------------------
 
-[☆]Developed by VictorON00
-[☆]Github: https://github.com/VictorON00
+[☆]Developed by ON00dev
+[☆]Github: https://github.com/ON00dev
 """)
 
 def ping_target(target):
@@ -70,7 +78,7 @@ def dns_query(domain):
 
 def main():
     while True:
-        print("_"*41+Fore.RESET)
+        print("-"*41+Fore.RESET)
         print(Fore.MAGENTA+"\nChoose an option:")
         print("1. Ping")
         print("2. Sniff Network Packets")
