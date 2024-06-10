@@ -15,7 +15,7 @@ This nifty tool uses the Scapy interactive library to tackle all sorts of networ
 
 1. Clone the repository:
     ```bash
-    git clone https://github.com/VictorON00/spoofART.git
+    git clone https://github.com/ON00dev/spoofART.git
     cd spoofART
     ```
 
